@@ -71,9 +71,8 @@ Ubuntu 20.04 ＋
 
 ### DockerStart
 
-如果熟悉docker
-也可以用docker啟動Spark，還可以玩最新的Kubenetes mode
-[Dockerfile](https://github.com/104corp/104dtt-spark-guide/blob/master/Dockerfile)
+如果熟悉docker，也可以用docker啟動Spark，還可以玩最新的Kubenetes mode，[Dockerfile](https://github.com/104corp/104dtt-spark-guide/blob/master/Dockerfile)
+
 當前目錄在 104dtt-spark-guide 目錄中
 
 ``` shell
