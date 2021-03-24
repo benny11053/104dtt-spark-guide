@@ -12,3 +12,8 @@ RUN apt-get update \
 RUN apt install -y openjdk-11-jre-headless
 
 RUN pip install pyspark
+RUN pip install jupyterlab
+
+WORKDIR /opt/workspace
+
+CMD jupyter lab --ip=0.0.0.0 --no-browser --allow-root
