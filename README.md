@@ -77,7 +77,7 @@ Ubuntu 20.04 ＋
 
 ``` shell
 docker build . -t pyspark:test
-docker run --rm -ti -p 8888:8888 pyspark:test
+docker run --rm -ti -p 8888:8888 -v $(pwd):/opt/workspace/104dtt-spark-guide pyspark:test
 ```
 
 在網址輸入： http://localhost:8888/lab
