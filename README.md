@@ -15,10 +15,15 @@ Spark Guide 是一個讓104同仁可以一起熟悉spark的小天地，除了Spa
 
 ### Spark 下載安裝
 
-Ubuntu 18.04 ＋
+Ubuntu 20.04 ＋
 無 cluster 設定
 
-1. Install Oracle Java JDK or OpenJDK
+1. Install Oracle Java JDK or OpenJDK(要用root)
+
+    ```shell
+    apt-get update
+    apt install -y openjdk-11-jre-headless
+    ```
 
 2. Check Java version
 
@@ -39,7 +44,8 @@ Ubuntu 18.04 ＋
 4. extract spark tar file to /usr/local
 
     ``` shell
-    tar -xvf spark-2.4.3-bin-hadoop2.7.tgz -C /usr/local
+    tar -xvf spark-3.1.1-bin-hadoop3.2.tgz -C /usr/local
+    mv /usr/local/spark-3.1.1-bin-hadoop3.2 /usr/local/spark
     ```
 
 5. Set Spark environment variables (on all nodes)
@@ -49,7 +55,7 @@ Ubuntu 18.04 ＋
     # Set SPARK_HOME
     export SPARK_HOME=/usr/local/spark
     # Set JAVA_HOME
-    export JAVA_HOME=/usr/lib/jvm/java-8-oracle
+    export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
     source ~/.bashrc
     ```
 
@@ -67,7 +73,15 @@ Ubuntu 18.04 ＋
 
 如果熟悉docker
 也可以用docker啟動Spark，還可以玩最新的Kubenetes mode
-[Dockerfile]（https://github.com/104corp/104dtt-spark-guide/blob/master/Dockerfile）
+[Dockerfile](https://github.com/104corp/104dtt-spark-guide/blob/master/Dockerfile)
+
+``` shell
+docker build . -t pyspark:test
+docker run --rm -ti -p 8888:8888 pyspark:test
+```
+
+在網址輸入： http://localhost:8888/lab
+就可以開始玩demo code了
 
 
 ## Reference
