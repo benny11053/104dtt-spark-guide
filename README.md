@@ -2,7 +2,7 @@
 
 Spark Guide 是一個讓104同仁可以一起熟悉spark的小天地，除了Spark以外也歡迎大家一起討論大數據的操作技巧喔
 
->spark-demo* 是2021年4月ETC demo code
+>spark-demo* 是2021年3月ETC demo code
 
 ## 讀取 ipynb
 
