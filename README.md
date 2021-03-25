@@ -71,17 +71,15 @@ Ubuntu 20.04 ＋
 
 ### DockerStart
 
-如果熟悉docker
-也可以用docker啟動Spark，還可以玩最新的Kubenetes mode
-[Dockerfile](https://github.com/104corp/104dtt-spark-guide/blob/master/Dockerfile)
+如果熟悉docker，也可以用docker啟動Spark，還可以玩最新的Kubenetes mode，[Dockerfile](https://github.com/104corp/104dtt-spark-guide/blob/master/Dockerfile)
+
+當前目錄在 104dtt-spark-guide 目錄中
 
 ``` shell
 docker build . -t pyspark:test
-docker run --rm -ti -p 8888:8888 pyspark:test
+docker run --rm -ti -p 8888:8888 -v $(pwd):/opt/workspace/104dtt-spark-guide pyspark:test
 ```
 
-在網址輸入： http://localhost:8888/lab
-就可以開始玩demo code了
-
+在網址輸入： http://localhost:8888/lab ，就可以開始玩demo code了；若要查看 Spark UI 可在網址輸入：http://localhost:4040/
 
 ## Reference
