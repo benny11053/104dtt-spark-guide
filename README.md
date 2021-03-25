@@ -80,8 +80,6 @@ docker build . -t pyspark:test
 docker run --rm -ti -p 8888:8888 -v $(pwd):/opt/workspace/104dtt-spark-guide pyspark:test
 ```
 
-在網址輸入： http://localhost:8888/lab
-就可以開始玩demo code了
-
+在網址輸入： http://localhost:8888/lab ，就可以開始玩demo code了；若要查看 Spark UI 可在網址輸入：http://localhost:4040/
 
 ## Reference
