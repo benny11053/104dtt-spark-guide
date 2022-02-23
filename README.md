@@ -33,7 +33,7 @@ Ubuntu 20.04 ＋
     update-alternatives --display java
     ```
 
-3. Download Apache Spark
+3. Download Apache Spark from https://spark.apache.org/downloads.html
 
     ![image](https://github.com/104corp/104dtt-spark-guide/blob/master/img/download_apache_spark.png)
 
